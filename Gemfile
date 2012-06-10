@@ -9,6 +9,13 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'unicorn'
+#gem 'thin'
+group :production do
+  gem 'pg'
+end
+gem 'aws-s3'
+gem 'fog'
 
 # Gems used only for assets and not required
 # in production environments by default.
